@@ -2,8 +2,8 @@ import { useState } from "react"
 import "./Navbar.css"
 
 function Navbar(){
-    const [open,setOpen] = useState(false);
-
+    const [open, setOpen] = useState(false);
+     
     return (
         <nav className="navbar">
             <div className="logo">My Logo</div>
@@ -15,12 +15,14 @@ function Navbar(){
                <li><a>Contact Us</a></li>
             </ul>
 
-            <div className="hamburger" onClick={()=>setOpen=(!open)}>
-                 
+            <div className="hamburger" onClick={()=>setOpen(!open)}>
+                <div className={open? "bar-open" : "bar"}></div>
+                <div className={open? "bar-open" : "bar"}></div>
+                <div className={open? "bar-open" : "bar"}></div>
             </div>
         </nav>
     )
-
-    
 }
+
+export default Navbar;
 
