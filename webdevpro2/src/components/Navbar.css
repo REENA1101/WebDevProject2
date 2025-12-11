@@ -12,7 +12,19 @@
 /* logo */
 .logo{
     font-size:1.5rem;
+    font-weight: bold;
+}
 
+/* Nav Links */
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links li a{
+    text-decoration: none;
+    
 }
 
 
