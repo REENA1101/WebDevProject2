@@ -1,4 +1,4 @@
-/* Navbar Container */
+Navbar Container */
 .navbar{
     width: 100%;
     padding:20px;
@@ -22,7 +22,7 @@
     gap: 30px;
 }
 
-.nav-links li a{
+/* .nav-links li a{
     text-decoration: none;
     
 }

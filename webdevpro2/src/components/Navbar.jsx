@@ -12,7 +12,7 @@ function Navbar(){
                 <li><a>Home</a></li>
                 <li><a>About</a></li>
                 <li><a>Services</a></li>
-               <li><a>Contact Us</a></li>
+                <li><a>Contact Us</a></li>
             </ul>
 
             <div className="hamburger" onClick={()=>setOpen(!open)}>
