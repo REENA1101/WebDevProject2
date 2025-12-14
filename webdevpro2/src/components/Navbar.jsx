@@ -4,22 +4,26 @@ import { useRef } from "react"
 
 
 function Navbar(){
+     const navRef = useRef();
 
+     const showNavbar = () => {
+         navRef.current.classList.toggle("responsive_nav");
+     }
     
     return (
         <header>
              <h3>LOGO</h3>
-             <nav>
+             <nav ref={navRef}>
                 <a href="/#">Home</a>
                 <a href="/#">Shop</a>
                 <a href="/#">Cart</a>
                 <a href="/#">About Us</a>
-                <button>
+                <button onClick = {showNavbar}>
                    <FaTimes/>
                 </button>
 
-                <button>
-                   <FaBars/> ?
+                <button onClick = {showNavbar}>
+                   <FaBars/> 
                 </button>
              </nav>
         </header>
