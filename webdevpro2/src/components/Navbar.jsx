@@ -1,7 +1,10 @@
-import { useState } from "react"
+import {FaBars, FaTimes} from "react-icons/fa"
 import "./Navbar.css"
+import { useRef } from "react"
+
 
 function Navbar(){
+
     
     return (
         <header>
@@ -11,8 +14,13 @@ function Navbar(){
                 <a href="/#">Shop</a>
                 <a href="/#">Cart</a>
                 <a href="/#">About Us</a>
+                <button>
+                   <FaTimes/>
+                </button>
 
-                <button></button>
+                <button>
+                   <FaBars/> ?
+                </button>
              </nav>
         </header>
     )
