@@ -18,11 +18,11 @@ function Navbar(){
                 <a href="/#">Shop</a>
                 <a href="/#">Cart</a>
                 <a href="/#">About Us</a>
-                <button onClick = {showNavbar}>
+                <button className="nav-btn nav-close-btn" onClick = {showNavbar}>
                    <FaTimes/>
                 </button>
 
-                <button onClick = {showNavbar}>
+                <button className="nav-btn nav-close-btn" onClick = {showNavbar}>
                    <FaBars/> 
                 </button>
              </nav>
