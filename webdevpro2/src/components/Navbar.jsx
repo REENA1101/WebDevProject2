@@ -8,7 +8,6 @@ import Hamburger from 'hamburger-react'
 function Navbar(){
      const navRef = useRef();
      const [isOpen, setOpen] = useState(false); 
-
      const showNavbar = () => {
          navRef.current.classList.toggle("responsive_nav");
          setOpen(!isOpen);
@@ -18,26 +17,30 @@ function Navbar(){
         <header>
                 <h3>Logo</h3>
                 
-                <div>
+                <div className="first">
                     <a href="/#">Home</a>
-                    <a href="/#">Shop</a>
+                    <a href="/#">Inventory</a>
                     <a href="/#">Cart</a>
                     <a href="/#">About Us</a>
                 </div>
 
-             <nav ref={navRef}>
-                <a href="/#">Home</a>
-                <a href="/#">Shop</a>
-                <a href="/#">Cart</a>
-                <a href="/#">About Us</a>
-             </nav>
+                <nav ref={navRef}>
+                    <a href="/#">Home</a>
+                    <a href="/#">Inventory</a>
+                    <a href="/#">Cart</a>
+                    <a href="/#">About Us</a>
+                </nav>
 
-            <div className="hamburger">
-                <Hamburger toggled={isOpen} toggle={showNavbar}/>
-            </div>
-            
+                <div className="hamburger">
+                    <Hamburger toggled={isOpen} toggle={showNavbar}/>
+                </div>
         </header>
-    )
+    );
+
+    <div className="middle" >
+          
+    </div>
+
 }
 
 export default Navbar;
