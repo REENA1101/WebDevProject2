@@ -81,7 +81,6 @@ nav.responsive_nav {
 .first a{
   gap: 40px;
   border-left: 1px red solid;
- 
   display: flex;
   justify-content: space-between;
 }
