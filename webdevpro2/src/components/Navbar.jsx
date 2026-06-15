@@ -1,8 +1,8 @@
-import {FaBars, FaTimes} from "react-icons/fa"
-import "./Navbar.css"
-import { Component, useRef, useState } from "react"
-import Hamburger from 'hamburger-react'
-
+import {FaBars, FaTimes} from "react-icons/fa";
+import "./Navbar.css";
+import { Component, useRef, useState } from "react";
+import Hamburger from 'hamburger-react';
+import photo from "../assets/logo2.png";
 
 
 function Navbar(){
@@ -15,7 +15,7 @@ function Navbar(){
     
     return (
         <header>
-                <h3>Logo</h3>
+                <img className="image" src={photo} alt="logo"></img>
                 
                 <div className="first">
                     <a href="/#">Home</a>
