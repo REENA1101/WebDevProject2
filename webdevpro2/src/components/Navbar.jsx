@@ -14,26 +14,26 @@ function Navbar(){
      };
     
     return (
-        <header>
-                <img className="image" src={photo} alt="logo"></img>
+        <header className="navbar">
+                <img className="logo" src={photo} alt="logo"/>
                 
-                <div className="first">
-                    <a href="/#">Home</a>
-                    <a href="/#">Inventory</a>
-                    <a href="/#">Cart</a>
-                    <a href="/#">About Us</a>
+                <div className="desktop-links">
+                    <a href="/">Home</a>
+                    <a href="/">Inventory</a>
+                    <a href="/">Cart</a>
+                    <a href="/">About Us</a>
                 </div>
-
-                <nav ref={navRef}>
-                    <a href="/#">Home</a>
-                    <a href="/#">Inventory</a>
-                    <a href="/#">Cart</a>
-                    <a href="/#">About Us</a>
-                </nav>
 
                 <div className="hamburger">
                     <Hamburger toggled={isOpen} toggle={showNavbar}/>
                 </div>
+
+                <nav ref={navRef} className="mobile-nav">
+                    <a href="/">Home</a>
+                    <a href="/">Inventory</a>
+                    <a href="/">Cart</a>
+                    <a href="/">About Us</a>
+                </nav>
         </header>
     );
 
